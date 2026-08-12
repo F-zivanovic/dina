@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>All Projects — Dina Does It</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ===== HEADER ===== -->
+  <header class="site-header">
+    <nav class="nav-bar">
+      <a href="#" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <svg width="28" height="20" viewBox="0 0 28 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 16L10 4H16L6 16H0Z" fill="#FF4D2E"/>
+            <path d="M8 20L18 8H24L14 20H8Z" fill="#FF4D2E"/>
+            <path d="M4 8L14 -4H20L10 8H4Z" fill="#FF4D2E" opacity="0.6"/>
+          </svg>
+        </span>
+        <span class="logo-text">DINA<br><strong>DOES IT</strong><sup>™</sup></span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+
+      <a href="#" class="btn-cta">Let's talk <span class="arrow">↗</span></a>
+    </nav>
+  </header>
+
+  <!-- ===== HERO / ARCHIVE ===== -->
+  <main>
+    <section class="hero">
+      <p class="eyebrow">// ARCHIVE</p>
+      <h1 class="hero-title">All <span class="grad">projects.</span></h1>
+      <p class="hero-sub">Every case study in one place - branding, websites, UI/UX, software and marketing.</p>
+
+      <!-- ===== FILTERS ===== -->
+      <div class="filters" role="tablist" aria-label="Filter projects by category">
+        <button class="filter-pill active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter-pill" data-filter="software" role="tab" aria-selected="false">Software</button>
+        <button class="filter-pill" data-filter="website" role="tab" aria-selected="false">Website</button>
+        <button class="filter-pill" data-filter="graphic-design" role="tab" aria-selected="false">Graphic Design</button>
+        <button class="filter-pill" data-filter="branding" role="tab" aria-selected="false">Branding</button>
+        <button class="filter-pill" data-filter="ui-ux" role="tab" aria-selected="false">UI/UX</button>
+        <button class="filter-pill" data-filter="social-media" role="tab" aria-selected="false">Social Media</button>
+      </div>
+    </section>
+
+    <!-- ===== PROJECT GRID ===== -->
+    <section class="grid" id="projectGrid">
+
+      <a href="#" class="card" data-categories="website software ui-ux">
+        <div class="card-media media-synapto">
+          <img src="assets/synapto.png" alt="Synapto payments platform shown on laptop and phone" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-text">
+            <p class="card-tags">Booking System &middot; Website &middot; User-Client Admin Panel</p>
+            <h3 class="card-title">Synapto</h3>
+            <p class="card-desc">Synapto is an embedded payments platform that helps businesses streamline payment processing, automate payouts, and unlock new revenue opportunities through modern financial technology.</p>
+          </div>
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+      </a>
+
+      <a href="#" class="card" data-categories="website branding graphic-design social-media">
+        <div class="card-media media-maw">
+          <img src="assets/maw.png" alt="MAW Wellness water purification website on laptop" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-text">
+            <p class="card-tags">Shopify &middot; CRM &middot; Rebranding &middot; Graphic Design &middot; Social Media</p>
+            <h3 class="card-title">MAW Wellness</h3>
+            <p class="card-desc">MAW Wellness provides advanced water purification and wellness solutions, helping homes and businesses enjoy cleaner, healthier, and better-tasting water.</p>
+          </div>
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+      </a>
+
+      <a href="#" class="card" data-categories="branding graphic-design social-media ui-ux website">
+        <div class="card-media media-ikaika">
+          <img src="assets/ikaika.png" alt="Ikaika Sports coming soon page on phone" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-text">
+            <p class="card-tags">Rebranding &middot; Graphic Design &middot; Social Media &middot; UI/UX &middot; Website in progress</p>
+            <h3 class="card-title">Ikaika Sports</h3>
+            <p class="card-desc">Ikaika Sports is an athlete management agency specializing in talent development, professional representation, and career growth for elite track and field athletes.</p>
+          </div>
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+      </a>
+
+      <a href="#" class="card" data-categories="branding website software">
+        <div class="card-media media-lieb">
+          <img src="assets/lieb.png" alt="Lieb Friseur hair salon website on laptop" loading="lazy">
+        </div>
+        <div class="card-body">
+          <div class="card-text">
+            <p class="card-tags">Full Rebranding &middot; Website &middot; Business Cards &middot; Booking Software</p>
+            <h3 class="card-title">Lieb</h3>
+            <p class="card-desc">Lieb Friseur is a premium hair salon specializing in modern haircuts, professional coloring, extensions, and personalized styling tailored to every client.</p>
+          </div>
+          <span class="card-arrow" aria-hidden="true">↗</span>
+        </div>
+      </a>
+
+    </section>
+
+    <p class="empty-state" id="emptyState" hidden>No projects in this category yet.</p>
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="site-footer">
+    <p>© 2026 Dina Does It. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
