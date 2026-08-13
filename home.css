@@ -75,7 +75,7 @@ img { max-width: 100%; display: block; }
 }
 
 .grad {
-  /* background: linear-gradient(180deg, #ffffff 0%, #7d6d6d 100%); */
+  background: linear-gradient(140deg, var(--sunset-orange) 0%, var(--accent-magenta) 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -619,7 +619,7 @@ section { position: relative; max-width: 1280px; margin: 0 auto; padding: 128px 
 
 .work-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 255, 255, 0.18);
+  border-color: var(--sunset-orange);
 }
 
 .work-card--wide {
@@ -691,8 +691,12 @@ section { position: relative; max-width: 1280px; margin: 0 auto; padding: 128px 
 .work-card:hover .work-arrow {
   background: var(--sunset-orange);
   border-color: transparent;
-  color: var(--cinder);
+  color: #ffffff;
   transform: scale(1.08);
+}
+
+.work-card:hover .work-arrow .icon-arrow {
+  transform: rotate(0deg);
 }
 
 .work .btn-pill-outline { display: inline-flex; }
