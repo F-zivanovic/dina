@@ -185,6 +185,12 @@ button {
   flex-shrink: 0;
 }
 
+.logo-mark-img {
+  height: 20px;
+  width: auto;
+  display: block;
+}
+
 .logo-text {
   font-family: var(--font-display);
   font-size: 11px;

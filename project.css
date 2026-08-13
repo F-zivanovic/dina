@@ -118,6 +118,7 @@ img { max-width: 100%; display: block; }
 
 .logo { display: flex; align-items: center; gap: 10px; }
 .logo-mark { display: flex; align-items: center; flex-shrink: 0; }
+.logo-mark-img { height: 20px; width: auto; display: block; }
 .logo-text { font-family: var(--font-display); font-size: 11px; font-weight: 500; letter-spacing: 0.06em; line-height: 1.35; color: var(--oslo-gray); }
 .logo-text strong { color: var(--white-lilac); font-weight: 700; letter-spacing: 0.08em; }
 .logo-text sup { font-size: 8px; }
