@@ -504,7 +504,7 @@ section { position: relative; max-width: 1280px; margin: 0 auto; padding: 128px 
   border-radius: var(--radius-card-lg);
   padding: 32px;
   overflow: hidden;
-  transition: border-color 0.3s ease, transform 0.3s ease;
+  transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-card::before {
@@ -525,8 +525,9 @@ section { position: relative; max-width: 1280px; margin: 0 auto; padding: 128px 
 }
 
 .service-card:hover {
-  border-color: rgba(255, 255, 255, 0.18);
+  border-color: var(--sunset-orange);
   transform: translateY(-4px);
+  box-shadow: 0 0 32px -8px rgba(255, 79, 59, 0.35);
 }
 
 .service-card--accent {
