@@ -75,7 +75,7 @@ img { max-width: 100%; display: block; }
 }
 
 .grad {
-  background: linear-gradient(140deg, var(--sunset-orange) 0%, var(--accent-magenta) 100%);
+  /* background: linear-gradient(180deg, #ffffff 0%, #7d6d6d 100%); */
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
@@ -699,8 +699,10 @@ section { position: relative; max-width: 1280px; margin: 0 auto; padding: 128px 
 
 /* ===================== PROCESS ===================== */
 
-.process { text-align: center; padding-top: 160px; }
-.process > .eyebrow { text-align: left; }
+.process {
+  padding-top: 160px;
+  max-width: 1024px;
+}
 
 .process-quote {
   font-family: var(--font-display);
@@ -708,19 +710,24 @@ section { position: relative; max-width: 1280px; margin: 0 auto; padding: 128px 
   font-size: clamp(24px, 3.4vw, 52px);
   line-height: 1.2;
   letter-spacing: -0.02em;
-  max-width: 900px;
-  margin: 0 auto 56px;
+  text-align: left;
+  margin: 0 0 56px;
   background: linear-gradient(180deg, #ffffff 0%, #7d6d6d 100%);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
 
+.process-quote .quote-orange {
+  background: none;
+  -webkit-background-clip: unset;
+  background-clip: unset;
+  color: var(--sunset-orange);
+}
+
 .process-steps {
   display: flex;
   gap: 24px;
-  max-width: 1024px;
-  margin: 0 auto;
 }
 
 .process-step {
