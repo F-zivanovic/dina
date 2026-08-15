@@ -1,4 +1,29 @@
 document.addEventListener("DOMContentLoaded", () => {
+  // ---- Mobile nav toggle (full-screen overlay) ----
+  const navToggle = document.getElementById("navToggle");
+  const mobileMenuClose = document.getElementById("mobileMenuClose");
+  const mobileMenu = document.getElementById("mobileMenu");
+
+  const openMenu = () => {
+    mobileMenu.classList.add("is-open");
+    navToggle.setAttribute("aria-expanded", "true");
+    document.body.style.overflow = "hidden";
+  };
+
+  const closeMenu = () => {
+    mobileMenu.classList.remove("is-open");
+    navToggle.setAttribute("aria-expanded", "false");
+    document.body.style.overflow = "";
+  };
+
+  if (navToggle && mobileMenu) {
+    navToggle.addEventListener("click", openMenu);
+    mobileMenuClose?.addEventListener("click", closeMenu);
+    mobileMenu.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+  }
+
   // ---- Cursor-following gradient glow ----
   const glow = document.getElementById("cursorGlow");
   const supportsHover = window.matchMedia("(hover: hover) and (pointer: fine)").matches;

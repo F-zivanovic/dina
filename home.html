@@ -31,8 +31,38 @@
       </ul>
 
       <a href="#contact" class="btn-cta">Let's talk <i class="fa-solid fa-arrow-right icon-arrow"></i></a>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </nav>
   </header>
+
+  <div class="mobile-menu" id="mobileMenu">
+    <div class="mobile-menu-header">
+      <a href="home.html" class="logo">
+        <span class="logo-mark" aria-hidden="true">
+          <img src="assets/logo-mark.png" alt="" class="logo-mark-img">
+        </span>
+      </a>
+      <button class="mobile-menu-close" id="mobileMenuClose" aria-label="Close menu">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <nav class="mobile-menu-links">
+      <a href="#services"><span class="mm-num">01</span>Services</a>
+      <a href="#work"><span class="mm-num">02</span>Work</a>
+      <a href="#about"><span class="mm-num">03</span>About</a>
+      <a href="#contact"><span class="mm-num">04</span>Contact</a>
+    </nav>
+
+    <div class="mobile-menu-footer">
+      <p class="mm-label">Working Globally</p>
+      <p class="mm-email">info@dinadoesit.com</p>
+      <a href="#contact" class="btn-cta mm-cta">Let's talk <i class="fa-solid fa-arrow-right icon-arrow"></i></a>
+    </div>
+  </div>
 
   <main>
     <!-- ===== HERO ===== -->
@@ -48,7 +78,7 @@
           </div>
 
           <h1 class="hero-title">
-            Design that <span class="grad">stops</span> the<br>scroll.
+            Design that<br class="mobile-break"> <span class="grad">stops</span> the<br>scroll.
           </h1>
 
           <p class="hero-sub">An independent studio crafting brands, websites, software and marketing for founders who refuse to look like everyone else.</p>
@@ -117,7 +147,7 @@
           <p class="eyebrow">// What I do</p>
           <h2 class="section-title">Everything under<br><span class="grad">one roof.</span></h2>
         </div>
-        <p class="section-note">No handoffs, no lost translations. One team, one vision – from the first sketch to the last line of code.</p>
+        <p class="section-note">No handoffs, no lost translations.<br class="mobile-break"> One team, one vision – from the first sketch to the last line of code.</p>
       </div>
 
       <div class="services-grid">
